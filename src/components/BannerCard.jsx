@@ -2,7 +2,7 @@ import { Github, Twitter } from "lucide-react"
 import { toPng } from "html-to-image"
 
 
-const BannerCard = ({ formData, selectedLanguages, availableLanguages }) => {
+const BannerCard = ({ formData, selectedLanguages, availableLanguages, }) => {
     const { name, field, twitter, github } = formData;
     console.log(formData)
 
@@ -21,6 +21,7 @@ const BannerCard = ({ formData, selectedLanguages, availableLanguages }) => {
         })
     }
     return(
+        <section className="flex flex-col">
         <div id="banner" className={`bg-gradient-to-r from-[rgb(41,41,41)] from-60% via-gray-900 to-[#494949] w-full h-fit px-[100px] py-[50px] text-white flex-col overflow-hidden  md:w-full`}>
             <div>
                 <h1 className="pt-[30px] text-[80px] font-md pl-[10px]">{name}</h1>
@@ -52,8 +53,10 @@ const BannerCard = ({ formData, selectedLanguages, availableLanguages }) => {
                     })}
                 </div>
             </div>
-            <button onClick={downloadBanner} className="bg-white text-purple-700 text-[18px] mt-[50px] p-[8px] rounded-[15px] font-semibold w-full">Download Banner</button>
+            
         </div>
+        <button onClick={downloadBanner} className="bg-white text-purple-700 text-[18px] mt-[50px] p-[8px] rounded-[15px] font-semibold w-full">Download Banner</button>
+        </section>
     )
 }
 
