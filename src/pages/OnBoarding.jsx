@@ -4,12 +4,12 @@ import {Twitter, Github} from "lucide-react";
 
 const OnBoarding = () => {
     return(
-        <div className="flex flex-col items-center justify-center text-center pt-[200px] relative">
+        <div className="flex flex-col items-center justify-center text-center pt-[200px] md:pt-[150px] relative">
             <div className="flex flex-col text-center z-[999px] relative items-center justify-center m-auto">
                 <div className="border border-gray-400 p-2 rounded-[30px] flex gap-2 w-[200px] items-center 
-                 mb-[20px]">
-                    <img src={B} className="w-[35px] rounded-full" />
-                    <span className='text-white'>Bannerly</span>
+                mb-[20px] md:p-[8px]">
+                    <img src={B} className="w-[35px] md:w-[] rounded-full" />
+                    <span className='text-white md:text-[13px]'>Bannerly</span>
                 </div>
             <h1 className="md:text-[80px] text-white text-[35px] font-bold">Get your <span className="bg-clip-text text-transparent bg-gradient-to-b from-purple-300 to-purple-600">customized</span> Social banner.</h1>
             <p className="md:text-[70px] text-transparent text-white font-800 text-[25px]">for Software Developers & Designers.</p>

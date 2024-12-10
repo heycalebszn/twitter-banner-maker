@@ -78,12 +78,12 @@ const Form = () => {
         setShowBanner(true)
     }
     return(
-        <section>
-        <form className="flex justify-center m-auto mt-[180px] flex-col w-[500px] relative" onSubmit={handleSubmit}>
+        <section className="w-full overflow-hidden">
+        <form className="flex justify-center m-auto mt-[180px] flex-col w-[500px] bg-red-900 overflow-hidden p-[20px]" onSubmit={handleSubmit}>
             <h1 className="text-white font-bold md:text-[40px] text-[30px] pb-[50px] text-center">Let's Get you <span className="bg-clip-text text-transparent bg-gradient-to-b from-purple-300 to-purple-600">Started</span>!</h1>
             <div className="flex flex-col mb-[20px]">
                 <label htmlFor="Full Name" className="text-white text-[20px] font-md pb-[10px]">Full Name</label>
-                <input className="w-[500px] h-[40px] p-[10px] rounded-md outline-none bg-transparent border border-gray-500 text-gray-300" type="text" placeholder="e.g Caleb Kalejaiye" value={formData.name} onChange={handleChange} name="name" />
+                <input className="w-[500px] md:w-full h-[40px] p-[10px] rounded-md outline-none bg-transparent border border-gray-500 text-gray-300" type="text" placeholder="e.g Caleb Kalejaiye" value={formData.name} onChange={handleChange} name="name" />
             </div>
             <div className="flex flex-col">
                 <label htmlFor="Role" className="text-white text-[20px] font-md pb-[10px]">Field</label>

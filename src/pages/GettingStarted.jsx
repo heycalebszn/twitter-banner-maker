@@ -22,7 +22,7 @@ export default function GettingStarted() {
         })
 
   return (
-    <div className="flex flex-col items-center justify-left text-left pt-[200px] md:px-[0px] px-[20px]">
+    <div className="flex flex-col items-center justify-left text-left pt-[200px] md:pt-[150px] md:px-[0px] mx-[20px]">
         <h1 className="md:text-[30px] font-medium text-white pb-[30px] text-left flex text-[25px]">Please Choose your Field!👨‍🍳</h1>
     
     <div className="flex flex-col items-center justify-left m-auto w-52 text-left">
