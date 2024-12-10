@@ -21,17 +21,17 @@ const BannerCard = ({ formData, selectedLanguages, availableLanguages }) => {
         })
     }
     return(
-        <div id="banner" className={`bg-gradient-to-r from-[#292929] from-60% via-gray-900 to-[#494949] w-full h-[600px] px-[100px] py-[50px] text-white flex-col mt-[100px]`}>
+        <div id="banner" className={`bg-gradient-to-r from-[#292929] from-60% via-gray-900 to-[#494949] w-full h-[600px] px-[100px] py-[50px] text-white flex-col mt-[100px] overflow-hidden`}>
             <div>
-                <h1 className="pt-[30px] text-[80px] font-md">{name}</h1>
-                <p className="text-[40px]">{field}_</p>
+                <h1 className="pt-[30px] text-[80px] font-md pl-[10px]">{name}</h1>
+                <p className="text-[40px] pl-[10px]">{field}_</p>
                 <div className="flex mt-[35px] gap-2">
                 <div className="flex">
-                    <Twitter className="w-[40px]" />
+                    <Twitter className="w-[50px]" />
                     <p className="text-[20px]">{twitter} |</p>
                 </div>
                 <div className="flex gap-2">
-                    <Github className="w-[40px]" />
+                    <Github className="w-[50px]" />
                     <p className="text-[20px]">{github}</p>
                 </div>
                 </div>
@@ -46,7 +46,7 @@ const BannerCard = ({ formData, selectedLanguages, availableLanguages }) => {
                              key={lang.name}
                              src={langObj.icon}
                              alt={lang.name}
-                             className="w-10 h-10"
+                             className="w-[50px]"
                             />
                         ) : null;
                     })}
