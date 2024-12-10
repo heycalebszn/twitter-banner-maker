@@ -4,11 +4,11 @@ import {Twitter, Github} from "lucide-react";
 
 const OnBoarding = () => {
     return(
-        <div className="flex flex-col items-center justify-center text-center pt-[200px] md:pt-[150px] relative">
+        <div className="flex flex-col items-center justify-center text-center pt-[100px] relative">
             <div className="flex flex-col text-center z-[999px] relative items-center justify-center m-auto">
-                <div className="border border-gray-400 p-2 rounded-[30px] flex gap-2 w-[200px] items-center 
+                <div className="border border-gray-400 p-2 rounded-[30px] flex gap-2 w-[150px] items-center 
                 mb-[20px] md:p-[8px]">
-                    <img src={B} className="w-[35px] md:w-[] rounded-full" />
+                    <img src={B} className="w-[25px] md:w-[] rounded-full ml-[10px]" />
                     <span className='text-white md:text-[13px]'>Bannerly</span>
                 </div>
             <h1 className="md:text-[80px] text-white text-[35px] font-bold">Get your <span className="bg-clip-text text-transparent bg-gradient-to-b from-purple-300 to-purple-600">customized</span> Social banner.</h1>
@@ -16,7 +16,7 @@ const OnBoarding = () => {
             </div>
 
             <Link to={"/get-started"}>
-            <button className="bg-white text-purple-700 text-[20px] mt-[50px] w-[300px] p-[10px] rounded-[15px] font-semibold">get started! 👩‍🍳</button>
+            <button className="bg-white text-purple-700 text-[20px] mt-[50px] w-[200px] p-[10px] rounded-[15px] font-semibold md:w-[300px]">get started! 👩‍🍳</button>
             </Link>
             <div>
                 <img className="rounded-[10px] mt-[100px] w-[1000px] md:px-[0px] px-[20px]" src={David} alt="david" />

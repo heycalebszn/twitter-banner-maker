@@ -80,15 +80,15 @@ const Form = () => {
 
     return(
         <section className="w-full">
-        <form className="flex justify-center m-auto mt-[180px] flex-col w-[500px] p-[20px]" onSubmit={handleSubmit}>
+        <form className="flex justify-center m-auto mt-[180px] flex-col w-[500px] p-[20px] mb-[100px]" onSubmit={handleSubmit}>
             <h1 className="text-white font-bold md:text-[40px] text-[30px] pb-[50px] text-center">Let's Get you <span className="bg-clip-text text-transparent bg-gradient-to-b from-purple-300 to-purple-600">Started</span>!</h1>
             <div className="flex flex-col mb-[20px]">
                 <label htmlFor="Full Name" className="text-white text-[20px] font-md pb-[10px]">Full Name</label>
-                <input className="w-[500px] h-[40px] p-[10px] rounded-md outline-none bg-transparent border border-gray-500 text-gray-300" type="text" placeholder="e.g Caleb Kalejaiye" value={formData.name} onChange={handleChange} name="name" />
+                <input className="w-full h-[40px] p-[10px] rounded-md outline-none bg-transparent border border-gray-500 text-gray-300" type="text" placeholder="e.g Caleb Kalejaiye" value={formData.name} onChange={handleChange} name="name" />
             </div>
             <div className="flex flex-col">
                 <label htmlFor="Role" className="text-white text-[20px] font-md pb-[10px]">Field</label>
-                <input className="w-[500px] h-[40px] p-[10px] rounded-md outline-none bg-transparent border border-gray-500 text-gray-300" type="text" placeholder="e.g Frontend Developer and Designer" value={formData.field} onChange={handleChange} name="field" />
+                <input className="w-full h-[40px] p-[10px] rounded-md outline-none bg-transparent border border-gray-500 text-gray-300" type="text" placeholder="e.g Frontend Developer and Designer" value={formData.field} onChange={handleChange} name="field" />
             </div>
             <div className="flex flex-col mt-[20px]">
                 <h1 className="text-white text-[20px] pb-[10px]">Socials</h1>

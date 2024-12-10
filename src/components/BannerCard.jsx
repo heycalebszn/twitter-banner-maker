@@ -22,17 +22,19 @@ const BannerCard = ({ formData, selectedLanguages, availableLanguages, }) => {
     }
     return(
         <section className="flex flex-col">
+           <h1 className="flex pb-[30px]">Preview</h1>
         <div id="banner" className={`bg-gradient-to-r from-[rgb(41,41,41)] from-60% via-gray-900 to-[#494949] w-full h-fit px-[100px] py-[50px] text-white flex-col overflow-hidden  md:w-full`}>
             <div>
-                <h1 className="pt-[30px] text-[80px] font-md pl-[10px]">{name}</h1>
-                <p className="text-[40px] pl-[10px]">{field}_</p>
-                <div className="flex mt-[35px] gap-2">
+                <h1 className="pt-[30px] text-[80px] font-md pl-[20px]">{name}</h1>
+                <p className="text-[40px] pl-[20px]">{field}_</p>
+                <div className="flex mt-[35px] gap-[5px]">
                 <div className="flex">
-                    <Twitter className="w-[50px]" />
-                    <p className="text-[20px]">{twitter} |</p>
+                    <Twitter className="w-[70px]" />
+                    <p className="text-[20px]">{twitter} </p>
+                    <span className="w-[1px] h-[25px] bg-white"></span>
                 </div>
                 <div className="flex gap-2">
-                    <Github className="w-[50px]" />
+                    <Github className="w-[70px]" />
                     <p className="text-[20px]">{github}</p>
                 </div>
                 </div>
