@@ -1,5 +1,5 @@
 import David from "./david-main.jpg";
-import solidity from "./svg/Solidity.svg";
+import solidity from "./svg/solidity.svg";
 import html from "./svg/html.svg";
 import css from "./svg/css.svg";
 import js from "./svg/js.svg";
