@@ -12,11 +12,11 @@ const OnBoarding = () => {
                     <span className='text-white md:text-[13px]'>Bannerly</span>
                 </div>
             <h1 className="md:text-[80px] text-white text-[35px] font-bold">Get your <span className="bg-clip-text text-transparent bg-gradient-to-b from-purple-300 to-purple-600">customized</span> Social banner.</h1>
-            <p className="md:text-[70px] text-transparent text-white font-800 text-[25px]">for Software Developers & Designers.</p>
+            <p className="md:text-[70px] text-transparent text-white font-800 text-[20px]">for Software Developers & Designers.</p>
             </div>
 
             <Link to={"/get-started"}>
-            <button className="bg-white text-purple-700 text-[20px] mt-[50px] w-[200px] p-[10px] rounded-[15px] font-semibold md:w-[300px]">get started! 👩‍🍳</button>
+            <button className="bg-white text-purple-700 md:text-[20px] mt-[50px] w-[200px] p-[10px] rounded-[15px] font-semibold md:w-[300px] ">get started! 👩‍🍳</button>
             </Link>
             <div>
                 <img className="rounded-[10px] mt-[100px] w-[1000px] md:px-[0px] px-[20px]" src={David} alt="david" />
@@ -24,10 +24,14 @@ const OnBoarding = () => {
             </div>
             <div className="mt-[50px] flex gap-4 mb-[30px]">
                 <div className="bg-transparent border border-gray-500 md:p-[10px] rounded-[10px] cursor-pointer p-[8px]">
+                    <a href="https://x.com/heyrapto">
                 <Twitter className="md:w-[25px] text-white w-[20px]" />
+                </a>
                 </div>
                 <div className="bg-transparent border border-gray-500 md:p-[10px] rounded-[10px] cursor-pointer p-[8px]">
+                <a href="https://x.com/heyrapto">
                 <Github className="md:w-[25px] text-white w-[20px]" />
+                </a>
                 </div>
             </div>
         </div>

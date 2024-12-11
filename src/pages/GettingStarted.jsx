@@ -63,7 +63,7 @@ export default function GettingStarted() {
       </Combobox>
 
       <Link to={'/form'}>
-      <button className="bg-white text-purple-700 text-[18px] mt-[120px] p-[8px] rounded-[15px] font-semibold w-[390px]">Continue</button>
+      <button className="bg-white text-purple-700 text-[18px] mt-[150px] p-[8px] rounded-[15px] font-semibold w-full">Continue</button>
       </Link>
     </div>
     </div>
